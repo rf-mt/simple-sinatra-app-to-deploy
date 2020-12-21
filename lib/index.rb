@@ -6,7 +6,7 @@ before do
 end
 
 get '/' do
-  url = request.path_info
+  url = request.url
   text_to_display = @super_simple_usecase.execute(url)
   text_to_display
 end
