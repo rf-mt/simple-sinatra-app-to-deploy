@@ -11,7 +11,7 @@ describe SuperSimpleUsecase do
 
   context 'given url is heroku' do
     it 'returns one item total' do
-      expect(use_case.execute('https://super-simple-app.herokuapp.com')).to eq("I'm not deployed to Heroku!")
+      expect(use_case.execute('https://super-simple-app.herokuapp.com')).to eq("I'm deployed to Heroku!")
     end
   end
 
